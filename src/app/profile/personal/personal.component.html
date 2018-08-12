@@ -1,0 +1,14 @@
+<div>
+  Personal: Git username:
+  <input type="text" [(ngModel)]="username">
+  <button (click)="showUserInfo()">Show User Info</button>
+
+  <p>Login name:{{response?.login}}</p>
+
+  <div *ngIf="response">
+    <p>Name:{{response.name}}</p>
+    <p>Bio:{{response.bio}}</p>
+    <p>Location:{{response?.location}}</p>
+  </div>
+
+</div>
